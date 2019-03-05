@@ -1,0 +1,62 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="component_event" id=".g6AqNYTNp4)bD,M|)?1" x="-797" y="-289">
+    <mutation component_type="Clock" instance_name="Clock1" event_name="Timer"></mutation>
+    <field name="COMPONENT_SELECTOR">Clock1</field>
+    <statement name="DO">
+      <block type="component_set_get" id=":3|vQU;s0L|~+,p|~mZs">
+        <mutation component_type="Clock" set_or_get="set" property_name="TimerEnabled" is_generic="false" instance_name="Clock1"></mutation>
+        <field name="COMPONENT_SELECTOR">Clock1</field>
+        <field name="PROP">TimerEnabled</field>
+        <value name="VALUE">
+          <block type="logic_false" id="xpiI/~d.w|#4#tK*uor)">
+            <field name="BOOL">FALSE</field>
+          </block>
+        </value>
+        <next>
+          <block type="controls_openAnotherScreen" id="Bk1WZJjw[U^z%)J|]`}u">
+            <value name="SCREEN">
+              <block type="text" id="Z]v}[p4@J6SAE#,O)#3L">
+                <field name="TEXT">Home</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="H$Ala(a5H]+:z5J[KMYe" x="-799" y="-166">
+    <mutation component_type="Clock" instance_name="Clock2" event_name="Timer"></mutation>
+    <field name="COMPONENT_SELECTOR">Clock2</field>
+    <statement name="DO">
+      <block type="component_method" id="_K-s=i($odyOARyjyzFB">
+        <mutation component_type="Sound" method_name="Vibrate" is_generic="false" instance_name="Sound1"></mutation>
+        <field name="COMPONENT_SELECTOR">Sound1</field>
+        <value name="ARG0">
+          <block type="math_number" id="EOO5Qh$U;.)J.PwG|kLf">
+            <field name="NUM">300</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_set_get" id="$][.[+0]ji{_YUSq+347">
+            <mutation component_type="Clock" set_or_get="set" property_name="TimerEnabled" is_generic="false" instance_name="Clock2"></mutation>
+            <field name="COMPONENT_SELECTOR">Clock2</field>
+            <field name="PROP">TimerEnabled</field>
+            <value name="VALUE">
+              <block type="logic_false" id="YqqIph2auy.:SaX0@{{,">
+                <field name="BOOL">FALSE</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="RIc-.mh}:AuKn?sn#d09" x="-806" y="-13">
+    <mutation component_type="Form" instance_name="Screen1" event_name="BackPressed"></mutation>
+    <field name="COMPONENT_SELECTOR">Screen1</field>
+    <statement name="DO">
+      <block type="controls_closeApplication" id="?DO?YE0Qe/LmvX!Uf*QH"></block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="176" language-version="23"></yacodeblocks>
+</xml>

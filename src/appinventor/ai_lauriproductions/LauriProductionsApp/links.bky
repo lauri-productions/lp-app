@@ -1,0 +1,16 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="component_event" id="vE]0k6H_Jx.l,,NMfGqD" x="-800" y="-329">
+    <mutation component_type="Form" instance_name="links" event_name="BackPressed"></mutation>
+    <field name="COMPONENT_SELECTOR">links</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreen" id="3(2rT6#zgW-t3==d^Rpa">
+        <value name="SCREEN">
+          <block type="text" id="FxGfOg$I7U(;muJLO*:N">
+            <field name="TEXT">menu</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="176" language-version="23"></yacodeblocks>
+</xml>

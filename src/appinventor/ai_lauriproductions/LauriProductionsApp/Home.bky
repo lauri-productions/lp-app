@@ -1,0 +1,153 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="component_event" id="={~_TL$A{MqRq:pGdj86" disabled="true" x="-206" y="-352">
+    <mutation component_type="Form" instance_name="Home" event_name="Initialize"></mutation>
+    <field name="COMPONENT_SELECTOR">Home</field>
+    <statement name="DO">
+      <block type="controls_if" id="2r|5G-*=-8oi(RgOpN5H">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="component_set_get" id="Q0#u62e3B$ZrV_C6uRGG">
+            <mutation component_type="CheckBox" set_or_get="get" property_name="Checked" is_generic="false" instance_name="CheckBox1"></mutation>
+            <field name="COMPONENT_SELECTOR">CheckBox1</field>
+            <field name="PROP">Checked</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_method" id="hkN3U%J.g74VE,+?f7Ak">
+            <mutation component_type="Player" method_name="Start" is_generic="false" instance_name="Player1"></mutation>
+            <field name="COMPONENT_SELECTOR">Player1</field>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="component_method" id="f.{RNOcrW?L}+l4hLBR+">
+            <mutation component_type="Player" method_name="Stop" is_generic="false" instance_name="Player1"></mutation>
+            <field name="COMPONENT_SELECTOR">Player1</field>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="ZZ,m9dSPxoK!fA$~Xh={" x="-688" y="-313">
+    <mutation component_type="Button" instance_name="Button1" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Button1</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreen" id="lHB[+N}.U{AohWsuqzKz">
+        <value name="SCREEN">
+          <block type="text" id="*bvFXaccOtKjV^q(PLqP">
+            <field name="TEXT">menu</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="global_declaration" id="AWRg;?~M7tVARAoX/p+u" x="-774" y="-171">
+    <field name="NAME">backPress</field>
+    <value name="VALUE">
+      <block type="math_number" id="KotG*]6nA!hyIYg5nS7F">
+        <field name="NUM">0</field>
+      </block>
+    </value>
+  </block>
+  <block type="component_event" id="sSM28gt*6tDVfZ]xz.un" disabled="true" x="-228" y="-178">
+    <mutation component_type="CheckBox" instance_name="CheckBox1" event_name="Changed"></mutation>
+    <field name="COMPONENT_SELECTOR">CheckBox1</field>
+    <statement name="DO">
+      <block type="controls_if" id="F0X5/LLpHNGv7cvJeQ[O">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="component_set_get" id="WI[NoHSm@taMa+C+F*T*">
+            <mutation component_type="Player" set_or_get="get" property_name="IsPlaying" is_generic="false" instance_name="Player1"></mutation>
+            <field name="COMPONENT_SELECTOR">Player1</field>
+            <field name="PROP">IsPlaying</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_method" id="d+Nb?d)x=6x.TJj5=kbN">
+            <mutation component_type="Player" method_name="Stop" is_generic="false" instance_name="Player1"></mutation>
+            <field name="COMPONENT_SELECTOR">Player1</field>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="component_method" id="kt!M9wz8hux_qWAt4_yC">
+            <mutation component_type="Player" method_name="Start" is_generic="false" instance_name="Player1"></mutation>
+            <field name="COMPONENT_SELECTOR">Player1</field>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="$Xq$0r]5},v#EA-B%OFE" x="-796" y="-51">
+    <mutation component_type="Form" instance_name="Home" event_name="BackPressed"></mutation>
+    <field name="COMPONENT_SELECTOR">Home</field>
+    <statement name="DO">
+      <block type="controls_if" id="d=[r{^H9%P8L*Q$7y5M.">
+        <mutation elseif="1"></mutation>
+        <value name="IF0">
+          <block type="math_compare" id="/11Z8XR@O^V1BwKz6;$4">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="lexical_variable_get" id="=;hXxX8gWpDO7z8l~.U7">
+                <field name="VAR">global backPress</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="o=Sv$sI;KPE`O-c56#yd">
+                <field name="NUM">0</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_method" id="y+SKV4RjtTMo`hzt#^O]">
+            <mutation component_type="Notifier" method_name="ShowAlert" is_generic="false" instance_name="Notifier1"></mutation>
+            <field name="COMPONENT_SELECTOR">Notifier1</field>
+            <value name="ARG0">
+              <block type="text" id="=DjwT.iDt#52wEIhgd0J">
+                <field name="TEXT">Are you sure you want to quit?</field>
+              </block>
+            </value>
+            <next>
+              <block type="lexical_variable_set" id="Vb]Qhq+0Kep{D-hfFfRN">
+                <field name="VAR">global backPress</field>
+                <value name="VALUE">
+                  <block type="math_add" id="{Yx.C6tp$7UvHtHTg@VJ">
+                    <mutation items="2"></mutation>
+                    <value name="NUM0">
+                      <block type="lexical_variable_get" id="6r!D{9PCtm5|ii0}ph6?">
+                        <field name="VAR">global backPress</field>
+                      </block>
+                    </value>
+                    <value name="NUM1">
+                      <block type="math_number" id="[u$EpJVI~p%y-f^![2d9">
+                        <field name="NUM">1</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <value name="IF1">
+          <block type="math_compare" id="(nVsVT.EO1~iiO!w-U(W">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="lexical_variable_get" id="7CD{!c17en]Bg/Om_CmR">
+                <field name="VAR">global backPress</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="a:7m8M#0gKLS6pW}eOVq">
+                <field name="NUM">1</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO1">
+          <block type="controls_closeApplication" id=":Xjtw.H97(rS0?9*Ubf="></block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="176" language-version="23"></yacodeblocks>
+</xml>

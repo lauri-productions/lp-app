@@ -1,0 +1,4 @@
+#|
+$JSON
+{"authURL":["ai2.appinventor.mit.edu"],"YaVersion":"176","Source":"Form","Properties":{"$Name":"menu","$Type":"Form","$Version":"24","AlignHorizontal":"3","AlignVertical":"2","AppName":"LauriProductionsApp","BackgroundColor":"&HFF444444","CloseScreenAnimation":"fade","OpenScreenAnimation":"fade","Sizing":"Responsive","Title":"menu","TitleVisible":"False","Uuid":"0","$Components":[{"$Name":"Button2","$Type":"Button","$Version":"6","Shape":"1","Text":"Home","Uuid":"1177480449"},{"$Name":"Button3","$Type":"Button","$Version":"6","Shape":"1","Text":"Links","Uuid":"582297939"},{"$Name":"Button1","$Type":"Button","$Version":"6","Shape":"1","Text":"About","Uuid":"658298717"}]}}
+|#

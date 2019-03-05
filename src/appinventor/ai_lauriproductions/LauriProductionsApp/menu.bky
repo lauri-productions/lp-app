@@ -1,0 +1,55 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="component_event" id="uizZmx*)u9!iRu*,=Z+S" x="-759" y="-353">
+    <mutation component_type="Button" instance_name="Button2" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Button2</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreen" id="HWT-[Wb.a~|.61:c!rHZ">
+        <value name="SCREEN">
+          <block type="text" id="`Le%Txk,{?pTtBf+kiC^">
+            <field name="TEXT">Home</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="gyG:LC(j$9op+}|vV]V0" x="-763" y="-267">
+    <mutation component_type="Button" instance_name="Button3" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Button3</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreen" id="Gtc(@3$C/A9`uew/lvt6">
+        <value name="SCREEN">
+          <block type="text" id="}:xWS$j-5SSiQQ5mO/^l">
+            <field name="TEXT">links</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="A|!CrdthRULmLNz7*V5E" x="-761" y="-188">
+    <mutation component_type="Button" instance_name="Button1" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Button1</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreen" id="}Tf;`24}uvlsY4oXYN+d">
+        <value name="SCREEN">
+          <block type="text" id="$#G`UTUJFpJ,-!KDD^=Y">
+            <field name="TEXT">about</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="t[(Jt+o-W+@7(q2B)#^C" x="-764" y="-103">
+    <mutation component_type="Form" instance_name="menu" event_name="BackPressed"></mutation>
+    <field name="COMPONENT_SELECTOR">menu</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreen" id="d79^FPOEAt`GY$AFmRyJ">
+        <value name="SCREEN">
+          <block type="text" id="t}S_^e}S^TY44e`sP`Mo">
+            <field name="TEXT">Home</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="176" language-version="23"></yacodeblocks>
+</xml>
